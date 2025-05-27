@@ -1,0 +1,64 @@
+from cryptography.fernet import Fernet
+import tkinter as tk
+from tkinter import filedialog, messagebox
+
+# Generate a key and save it (only once)
+def generate_key():
+    key = Fernet.generate_key()
+    with open("secret.key", "wb") as key_file:
+        key_file.write(key)
+    return key
+
+# Load the previously generated key
+def load_key():
+    return open("secret.key", "rb").read()
+
+# Encrypt a file
+def encrypt_file(filename):
+    key = load_key()
+    f = Fernet(key)
+    
+    with open(filename, "rb") as file:
+        file_data = file.read()
+
+    encrypted_data = f.encrypt(file_data)
+
+    with open(filename + ".enc", "wb") as file:
+        file.write(encrypted_data)
+
+# Decrypt a file
+def decrypt_file(filename):
+    key = load_key()
+    f = Fernet(key)
+
+    with open(filename, "rb") as file:
+        encrypted_data = file.read()
+
+    decrypted_data = f.decrypt(encrypted_data)
+
+    original_filename = filename.replace(".enc", "")
+    with open(original_filename, "wb") as file:
+        file.write(decrypted_data)
+
+# GUI Functions
+def encrypt_action():
+    filepath = filedialog.askopenfilename()
+    if filepath:
+        encrypt_file(filepath)
+        messagebox.showinfo("Success", "File encrypted successfully!")
+
+def decrypt_action():
+    filepath = filedialog.askopenfilename()
+    if filepath:
+        decrypt_file(filepath)
+        messagebox.showinfo("Success", "File decrypted successfully!")
+
+# GUI Setup
+app = tk.Tk()
+app.title("AES-256 Encryption Tool")
+
+tk.Button(app, text="Generate Key", command=generate_key).pack(pady=10)
+tk.Button(app, text="Encrypt File", command=encrypt_action).pack(pady=10)
+tk.Button(app, text="Decrypt File", command=decrypt_action).pack(pady=10)
+
+app.mainloop()
