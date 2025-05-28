@@ -9,9 +9,3 @@ Scans a target IP/domain for common open ports.
 
 ### 🚀 3. Main Interface (`main.py`)
 The main menu that allows users to choose and run any of the available modules.
-
----
-
-## ⚙️ Usage
-
-### ✅ 1. Run Toolkit
