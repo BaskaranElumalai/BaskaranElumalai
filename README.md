@@ -1,5 +1,3 @@
-
-Navigation Menu
 AES-Encryption-Tool
 
 Code
@@ -22,9 +20,9 @@ Blame
 🔒 AES-Encryption-Tool is a powerful and easy-to-use application for encrypting and decrypting files using AES-256 encryption. It ensures data confidentiality with a simple, user-friendly interface designed for both beginners and professionals.
 COMPANY: CODETECH IT SOLUTIONS
 
-NAME: 
+NAME: BaskaranE 
 
-INTERN ID: 
+INTERN ID: CT06DF546
 
 DOMAIN: CYBER SECURITY & ETHICAL HACKING
 
@@ -91,20 +89,3 @@ python encryption_tool.py
 
 
 🤝 Contributing to the Project
-💡 We welcome contributions to improve this tool!
-
-Fork this repository
-
-Create a new branch:
-
-git checkout -b feature-branch
-
-Commit your changes:
-
-git commit -m "Added new feature"
-
-Push to the branch:
-
-git push origin feature-branch
-
-Create a Pull Request, and we’ll review it!
