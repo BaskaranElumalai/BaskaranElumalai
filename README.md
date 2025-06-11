@@ -1,34 +1,110 @@
-# Penetration Testing Toolkit
 
-This is a modular Python-based toolkit developed as part of the CodTech Internship (Task 3) for Cybersecurity & Ethical Hacking. It includes multiple tools to assist in basic penetration testing activities.
+Navigation Menu
+AES-Encryption-Tool
 
-### 🔍 1. Port Scanner (`port_scanner.py`)
-Scans a target IP/domain for common open ports.
+Code
+Issues
+Pull requests
+AES-Encryption-Tool
+/README.md
+VikasOffical
+VikasOffical
+3 months ago
+123 lines (61 loc) · 3.19 KB
 
-### 🚀 3. Main Interface (`main.py`)
-The main menu that allows users to choose and run any of the available modules.
+Preview
 
-# Advanced Encryption Tool (AES-256)
+Code
 
-This project is a file encryption and decryption tool developed in Python as part of the CodTech Internship (Task 4) for Cybersecurity & Ethical Hacking. It uses the AES-256 standard via the `cryptography` library to securely protect file contents.
+Blame
+🔐 AES Encryption Tool – Secure Your Files with AES-256
+📌 Overview
+🔒 AES-Encryption-Tool is a powerful and easy-to-use application for encrypting and decrypting files using AES-256 encryption. It ensures data confidentiality with a simple, user-friendly interface designed for both beginners and professionals.
+COMPANY: CODETECH IT SOLUTIONS
 
----
+NAME: 
 
-## 🔐 Features
+INTERN ID: 
 
-- Encrypt any file with AES-256 encryption
-- Decrypt `.enc` files back to their original form
-- Generate and store encryption keys securely
-- Simple command-line interface for ease of use
+DOMAIN: CYBER SECURITY & ETHICAL HACKING
 
----
+DURATION: 4 WEEKS
 
-## 📦 Requirements
+MENTOR: NELLA SANTOSH
 
-- Python 3.x
-- `cryptography` library
+🚀 Key Features
+✔️ AES-256 Encryption (GCM Mode) – Industry-standard security
 
-Install the required package:
+✔️ User-Friendly GUI – Built with Tkinter for an intuitive experience
 
-```bash
-pip install cryptography
+✔️ Password-Protected Security – Encrypt files with a custom password
+
+✔️ Multi-File Support – Encrypt and decrypt multiple files
+
+✔️ Cross-Platform Compatibility – Works on Windows, macOS, and Linux
+
+✔️ Fast & Efficient – Lightweight tool with high-speed encryption
+
+⚙️ How It Works
+1️⃣ Select a file to encrypt or decrypt.
+
+2️⃣ Enter a strong password to protect the file.
+
+3️⃣ The tool encrypts the file using AES-256 and saves it with a .enc extension.
+
+4️⃣ To decrypt, select the encrypted file and enter the same password.
+
+5️⃣ The original file is restored securely.
+
+📥 Installation & Setup
+🔹 Step 1: Install Dependencies
+Ensure you have Python 3.x installed, then run:
+
+pip install cryptography tkinter
+
+🔹 Step 2: Run the Application
+python encryption_tool.py
+
+📦 Tech Stack Used
+🚀 Python – Core programming language
+
+🖥️ Tkinter – GUI framework for user interface
+
+🔐 Cryptography Library – AES-256 encryption for data security
+
+🔒 Security & Encryption Details
+✅ Uses AES-256-GCM, a highly secure encryption algorithm.
+
+✅ Generates a unique encryption key for each session.
+
+✅ Ensures that only users with the correct password can decrypt files.
+
+🛠️ Future Enhancements
+✅ Drag & Drop File Selection
+
+✅ Secure Key Storage Option
+
+✅ Dark Mode UI for Better User Experience
+
+✅ Cloud Backup & Secure Sharing Feature
+
+
+
+🤝 Contributing to the Project
+💡 We welcome contributions to improve this tool!
+
+Fork this repository
+
+Create a new branch:
+
+git checkout -b feature-branch
+
+Commit your changes:
+
+git commit -m "Added new feature"
+
+Push to the branch:
+
+git push origin feature-branch
+
+Create a Pull Request, and we’ll review it!
